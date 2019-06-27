@@ -16,7 +16,7 @@ start:
         jmp $                   ; Jump here - infinite loop!
 
 
-        text_string db 'OS Bootloader for Prototyp Engineering v0.1', 0
+        text_string db 'OS Bootloader by Yuriy Georgiev v0.1', 0
 
 
 print_string:                   ; Routine: output string in SI to screen
