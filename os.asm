@@ -34,6 +34,6 @@ print_string:                   ; Routine: output string in SI to screen
 
 
         times 510-($-$$) db 0   ; fill the rest of the space of the bootloader with zero bytes 
-        						; (bootloader must be 512 bytes so => 510 - the code below (0xAA55) - the code above
+        						; (bootloader must be 512 bytes so => 510 <minus> the code below (0xAA55) <minus> the code above
         dw 0xAA55               ; The standard PC boot signature, I don't really understand this part..
                                 ; I guess it is just a header kind of ending
