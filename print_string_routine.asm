@@ -1,11 +1,11 @@
-;print string using interrupts, works at macOS
-;note that system interrupts in other OSes differ so it won't work on DOS or Linsux
+;print string using interrupts, works on macOS
+;note that system interrupts in other OSes differ so it won't work on DOS or Linux
 ;
-;code by Yuriy Georgiev
+;code by Yuriy Georgiev (MiSSiNG in ByTES/TRSi)
 
 SECTION .data
 
-msg: db "a test string for DevBG!",10,0
+msg: db "a test string for to be printed!",10,0
 msgLn: equ $-msg ;this $-msg means: <current memory offset> - msg (in bytes)
 
 SECTION .text
